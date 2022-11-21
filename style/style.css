@@ -1,0 +1,9 @@
+.page {
+    background: #181818;
+}
+
+.sidebar {
+    background: #202020;
+    width: 300px;
+    height: 100vh;
+}
