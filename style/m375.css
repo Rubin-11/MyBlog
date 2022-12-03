@@ -18,5 +18,13 @@
         color: #D2D2D2;
         padding: 26px;
     }
- 
+
+    .sidebar {
+        margin-bottom: 60px;
+        min-height: auto;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
 }
