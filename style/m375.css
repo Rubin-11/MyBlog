@@ -20,8 +20,14 @@
     }
 
     .sidebar {
-        margin-bottom: 60px;
+        padding-bottom: 60px;
+        border-radius: 0 0 50px 50px;
         min-height: auto;
+    }
+
+    .header {
+        width: auto;
+        margin-top: 60px;
     }
 
     .menu ul {

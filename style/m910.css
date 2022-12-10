@@ -1,0 +1,8 @@
+@media (max-width: 910px) {
+    .header {
+        width: auto;
+    }
+    .section-conteiner {
+        width: 430px;
+    }
+}

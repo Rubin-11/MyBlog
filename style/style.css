@@ -1,3 +1,31 @@
+@keyframes glow-blue {
+    from {
+        box-shadow: 0px 0px 20px blue;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px blue;
+    }
+
+    to {
+        box-shadow: 0px 0px 20px blue;
+    }
+}
+
+@keyframes glow-red {
+    from {
+        box-shadow: 0px 0px 20px red;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px red;
+    }
+
+    to {
+        box-shadow: 0px 0px 20px red;
+    }
+}
+
 .center {
     padding-left: calc(50% - 1140px / 2);
     padding-right: calc(50% - 1140px / 2);
@@ -80,50 +108,55 @@
 .sidebar__batton {
     display: flex;
     justify-content: space-between;
+    margin-top: 43px;
 }
 
 .sidebar__batton__my-works {
     color: #FFFFFF;
     font-size: 12px;
     line-height: 14px;
-    background: #ED3024;
+    background: red;
     box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
     border-radius: 25px;
     padding: 13px 25px;
 }
 
 .sidebar__batton__my-works:hover {
-    background-color: #c4241a;
+    border-radius: 25px;
+    animation: glow-red 1s infinite;
+    transition: 0.1s;
 }
 
 .sidebar__batton__write-to-me {
     color: #FFFFFF;
     font-size: 12px;
     line-height: 14px;
-    background: #3137C9;
+    background: blue;
     box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
     border-radius: 25px;
     padding: 13px 25px;
 }
 
 .sidebar__batton__write-to-me:hover {
-    background-color: #232894;
+    border-radius: 25px;
+    animation: glow-blue 1s infinite;
+    transition: 0.1s;
 }
 
 .conteiner {
     padding-bottom: 100px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 100%;
 }
 
 .header {
     height: 40px;
-    display: flex;
-    align-items: center;
+    width: 600px;
 }
 
-.menu {
+.header__menu {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -136,7 +169,7 @@
     color: #FFFFFF;
 }
 
-.menu ul {
+.header__menu ul {
     text-align: center;
     padding: 0;
     margin: 0;
@@ -144,7 +177,8 @@
     justify-content: flex-start;
 }
 
-.menu li {
+.header__menu li {
+    cursor: pointer;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -154,12 +188,15 @@
     list-style: none;
 }
 
-.menu li:hover {
-    background: #3137C9;
+.header__menu li:hover {
+    background: blue;
+    border-radius: 5px;
+    animation: glow-blue 1s infinite;
+    transition: 0.1s;
 }
 
 .main {
-   
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,8 +205,7 @@
 }
 
 .section-conteiner {
-width: 100%;
-    max-width: 600px;
+    width: 600px;
     background: #202020;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
     border-radius: 5px;
