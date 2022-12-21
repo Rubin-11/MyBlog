@@ -30,7 +30,11 @@
         margin-top: 60px;
     }
 
-    .menu ul {
+    .header__menu ul {
         justify-content: center;
+    }
+
+    .header__menu li {
+        width: 102px;
     }
 }
